@@ -27,6 +27,4 @@ Procesador de CSS que permite usar **plugins para transformar y optimizar el CSS
 
 ---
 
-## 🔗 En conjunto  
-Estas tecnologías permiten crear una **página web moderna, rápida, visualmente atractiva y fácil de mantener**, enfocada en el **frontend**.
 
