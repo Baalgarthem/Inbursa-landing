@@ -1,69 +1,32 @@
-# React + TypeScript + Vite
+# 🚀 Tecnologías utilizadas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### ⚛️ React  
+Biblioteca para construir **interfaces de usuario interactivas y basadas en componentes**.
 
-Currently, two official plugins are available:
+### 🟦 TypeScript  
+Lenguaje que extiende JavaScript con **tipado estático**, ayudando a detectar errores y mejorar la calidad del código.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ⚡ Vite  
+Herramienta para **desarrollo y construcción de proyectos web**.  
+Proporciona un servidor rápido en desarrollo y genera archivos optimizados para producción.
 
-## Expanding the ESLint configuration
+### 🎨 Tailwind CSS  
+Framework de CSS utilitario que permite diseñar interfaces rápidamente usando **clases predefinidas**.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🎞️ Framer Motion  
+Librería para crear **animaciones y transiciones fluidas** en aplicaciones React.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🖼️ Lucide React  
+Colección de **íconos SVG listos para usar en React**, mejorando la apariencia visual.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### 🧹 ESLint  
+Herramienta para **analizar y corregir problemas de estilo** y errores comunes en el código.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🌀 PostCSS  
+Procesador de CSS que permite usar **plugins para transformar y optimizar el CSS** (integrado con Tailwind).
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🔗 En conjunto  
+Estas tecnologías permiten crear una **página web moderna, rápida, visualmente atractiva y fácil de mantener**, enfocada en el **frontend**.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
